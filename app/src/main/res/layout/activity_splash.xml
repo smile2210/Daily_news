@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/a"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/splash"
+        android:layout_marginHorizontal="10dp"></ImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily News"
+        android:textColor="#85b0af"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/bangers"
+        android:textSize="40dp"></TextView>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/blackchary"
+        android:text="daily update your knowledge"
+        android:textColor="#cbbeac"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"></TextView>
+
+
+
+</LinearLayout>

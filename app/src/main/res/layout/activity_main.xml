@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9AB5EC"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorFullWidth="true"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#FFFFFF"
+                app:tabTextColor="@color/c"></com.google.android.material.tabs.TabLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nointernet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nointernet"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Please turn on your mobile data or wifi....."
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/a"
+            android:textSize="18sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/retry"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_baseline_refresh_24"
+            android:backgroundTint="@color/a"
+            android:contextClickable="true"></ImageButton>
+    </LinearLayout>
+
+</LinearLayout>
